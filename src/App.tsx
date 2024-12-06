@@ -44,7 +44,7 @@ function App() {
     ).toString();
 
     try {
-      const response = await fetch(`http://iotfinal.free.nf/IOTFinal/get_smartdevices.php?${query}`);
+      const response = await fetch(`https://iotfinal.free.nf/IOTFinal/get_smartdevices.php?${query}`);
       const data = await response.json();
       setDevices(data);
     } catch (err) {
@@ -64,7 +64,7 @@ function App() {
     ).toString();
 
     try {
-      const response = await fetch(`http://iotfinal.free.nf/IOTFinal/get_sensordata.php?${query}`);
+      const response = await fetch(`https://iotfinal.free.nf/IOTFinal/get_sensordata.php?${query}`);
       const data = await response.json();
       setReadings(data);
     } catch (err) {
@@ -91,7 +91,7 @@ function App() {
     const newDevice = { ...device };
   
     try {
-      const response = await fetch('http://iotfinal.free.nf/IOTFinal/get_smartdevices.php', {
+      const response = await fetch('https://iotfinal.free.nf/IOTFinal/get_smartdevices.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -1,5 +1,5 @@
 {
-  "homepage": "https://PapaYaw-Boampong.github.io/IOT_FP_Server",
+  "homepage": "https://PapaYaw-Boampong.github.io/IOT_FP_Server/index.html",
   "name": "iot-final-project",
   "private": true,
   "version": "0.0.0",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "lucide-react": "^0.344.0",
